@@ -153,7 +153,7 @@ function showDetails(rawData){
         container.style.backgroundRepeat = `no-repeat`;
         container.style.backgroundPosition = `center center`;
     }else{
-        secondSection.style.background = `rgba(255, 255, 255, 0.4)`;
+        secondSection.style.background = `rgba(255, 255, 255, 0.2)`;
         imgUrl = `/images/night/`;
         submit.style.background = `rgb(19,24,98,.8)`
         container.style.background = `url(${imgUrl}${imgType}.jpg)`;
