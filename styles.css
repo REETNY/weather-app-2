@@ -259,12 +259,19 @@ main{
         width: 90%;
     }
 
+    .location{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        row-gap: 20px;
+    }
+
     .tempDeg{
         font-size: 45px;
     }
 
     .searchedState{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .time{
@@ -274,6 +281,12 @@ main{
 
     .condition{
         font-size: 15px;
+        text-align: center;
+    }
+
+    .cloudIcons{
+        align-items: center;
+        justify-content: center;
     }
 
     .second-section{
