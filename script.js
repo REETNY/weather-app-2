@@ -32,7 +32,7 @@ const container = document.querySelector(".app-body");
 const secondSection = document.querySelector(".second-section");
 
 
-let APIURL = `http://api.weatherapi.com/v1/current.json?key=`;
+let APIURL = `https://api.weatherapi.com/v1/current.json?key=`; // updated
 let APIKEY = `aaa5eb12cbca42e6b9385412223012`;
 
 async function weatherDetails(location){
