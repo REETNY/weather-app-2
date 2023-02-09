@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.app-body{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-image: url(/day/mist.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 30px;
+    align-items: flex-start;
+}
+
+.head{
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(248, 245, 245);
+}
+
+.weather-content{
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+    justify-content: flex-end;
+    height: 90px;
+}
+
+.tempDeg{
+    font-size: 88px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.time{
+    color: white;
+    font-size: 18px;
+}
+
+.searchedState{
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.cloudIcons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.icon-type{
+    width: 55px;
+    height: 55px;
+}
+
+.icon-type img{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.condition{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+
+
+.second-section{
+    position: absolute;
+    width: 30%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background: rgba(24, 24, 24, 0.4);
+}
+
+.form{
+    padding: 0 25px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.textbox{
+    width: 80%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.textbox::placeholder{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.submit{
+    width: 15%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: rgba(189, 186, 186);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.some-location{
+    padding: 0px 25px;
+}
+
+.some-location hr{
+    height: 2px;
+    border-color: rgb(255, 255, 255, .8);
+    margin-top: 35px;
+}
+
+.eachLocation{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.locate{
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.weather-details{
+    padding: 25px 25px 0px 25px;
+    width: 100%;
+}
+
+.weather-details .head{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.some-details{
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 100%;
+}
+
+.cloud,
+.humid,
+.wind,
+.windDir,
+.cloud,
+.lon,
+.lat,
+.windDeg,
+.continent,
+.country{
+    display: flex;
+    justify-content: space-between;
+}
+
+.active{
+    color: purple;
+}
+
+
+
+/* media query for small mobile */
+@media only screen and (max-width: 600px){
+    .app-body{
+        width: 100vw;
+        min-height: 100vh;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .first-section{
+        position: static;
+        height: 25%;
+        max-height: 30%;
+        padding: 10px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-section .head{
+        align-self: flex-start;
+    }
+
+    .tempDeg{
+        font-size: 35px;
+    }
+
+    .searchedState{
+        font-size: 30px;
+    }
+
+    .time{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .condition{
+        font-size: 15px;
+    }
+
+    .second-section{
+        position: static;
+        height: 75%;
+        width: 100%;
+    }
+}
+
+/* media query for small small ipads and some bigs ones */
+@media only screen and (min-width: 601px) and (max-width: 950px){
+    .first-section{
+        width: 65%;
+        position: relative;
+    }
+
+    .second-section{
+        width: 35%;
+    }
+
+    .weather-content{
+        width: 95%;
+        display: flex;
+        height: fit-content;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

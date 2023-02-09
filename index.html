@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advanced Weather App</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" defer></script>
+    <link rel="icon" href="day/svg.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+    <main>
+
+        <div class="app-body">
+            <div class="first-section">
+                <div class="head">The Weather</div>
+                <div class="weather-content">
+
+                    <div class="tempDeg"></div>
+
+                    <div class="location">
+                        <span class="searchedState">
+                            
+                        </span>
+                        <span class="time">
+                            <span class="currTime"></span>
+                            <span class="divisor"></span>
+                            <span class="weekday"></span>
+                            <span class="weekDate"></span>
+                            <span class="month"></span>
+                            <span class="year"></span>
+                        </span>
+                    </div>
+
+                    <div class="cloudIcons">
+                        <span class="icon-type">
+                            <img src="" alt="" class="img">
+                        </span>
+                        <span class="condition">
+                       
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="second-section">
+
+                <form action="" class="form" id="form">
+                    <input type="text" id="textbox" class="textbox" placeholder="Search Location">
+                    <button class="submit" id="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+
+                <div class="some-location">
+                    <ul class="eachLocation">
+                        <li class="locate">California</li>
+                        <li class="locate">Texas</li>
+                        <li class="locate">Lagos</li>
+                        <li class="locate">Barcelona</li>
+                        <li class="locate">Ontario</li>
+                    </ul>
+                    <hr/>
+                </div>
+
+                <div class="weather-details">
+                    <div class="head">Weather Details</div>
+
+                    <div class="some-details">
+
+                        <div class="cloud">
+                            <span class="cloudy">Cloudy</span>
+                            <span class="cloudyPercent">20%</span>
+                        </div>
+
+                        <div class="humid">
+                            <span class="humidity">Humidity</span>
+                            <span class="humidPercent">20%</span>
+                        </div>
+
+                        <div class="wind">
+                            <span class="windy">Wind Speed</span>
+                            <span class="windPercent">20%</span>
+                        </div>
+
+                        <div class="windDir">
+                            <span class="direction">Wind Direction</span>
+                            <span class="directionPoint">South</span>
+                        </div>
+
+                        <div class="windDeg">
+                            <span class="degree">Wind Degree</span>
+                            <span class="windDegree">35°</span>
+                        </div>
+
+                        <div class="lon"> <span class="lon">lon</span> <span class="lonMag">2.33</span> </div>
+
+                        <div class="lat"> <span class="lat">lat</span> <span class="latMag">4.56</span> </div>
+
+                        <div class="country">
+                            country <span id="country">UK</span>
+                        </div>
+
+                        <div class="continent">
+                            continent <span class="area">Europe</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    
+</body>
+</html>
