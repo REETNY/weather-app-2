@@ -231,7 +231,6 @@ main{
     .app-body{
         width: 100vw;
         min-height: 100vh;
-        height: 100vh;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -240,9 +239,8 @@ main{
     }
 
     .first-section{
-        position: static;
-        height: 25%;
-        max-height: 30%;
+        position: relative;
+        height: 250px;
         padding: 10px 15px;
         display: flex;
         flex-direction: column;
@@ -253,8 +251,16 @@ main{
         align-self: flex-start;
     }
 
+    .weather-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+    }
+
     .tempDeg{
-        font-size: 35px;
+        font-size: 45px;
     }
 
     .searchedState{
