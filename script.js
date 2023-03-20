@@ -75,7 +75,7 @@ async function getConditionCode(){
             cloudyCodes.push(item.code);
         }if(item.day.includes("snow") || item.day.includes("ice") || item.day.includes("Ice")){
             snowyCodes.push(item.code)
-        }if(item.day.includes("Mist") || item.day.includes("Fog")){
+        }if(item.day.includes("Mist") || item.day.includes("Fog") || item.day.includes("Overcast")){
             mistyCodes.push(item.code)
         }if(item.day.includes("Blizzard")){
             blizzardCodes.push(item.code)
