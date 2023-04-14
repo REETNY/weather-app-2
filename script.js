@@ -151,7 +151,7 @@ function showDetails(rawData){
         container.style.background = `url(${imgUrl}${imgType}.jpg)`;
         container.style.backgroundSize = `cover`;
         container.style.backgroundRepeat = `no-repeat`;
-        container.style.backgroundPosition = `center center`;
+        container.style.backgroundPosition = `top center`;
     }else{
         secondSection.style.background = `rgba(255, 255, 255, 0.2)`;
         imgUrl = `/images/night/`;
@@ -159,7 +159,7 @@ function showDetails(rawData){
         container.style.background = `url(${imgUrl}${imgType}.jpg)`;
         container.style.backgroundSize = `cover`;
         container.style.backgroundRepeat = `no-repeat`;
-        container.style.backgroundPosition = `center center`;
+        container.style.backgroundPosition = `top`;
     }
 
     tempDeg.innerText = `${Math.floor(temp_c)}°C`;
