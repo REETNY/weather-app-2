@@ -279,9 +279,6 @@ window.onload = () => {
         getCoOrdinate();
     })
 
-    
-
-    
 }
 
 function getCoOrdinate(){
